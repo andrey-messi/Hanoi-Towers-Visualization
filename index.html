@@ -11,9 +11,20 @@
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL.json", {onProgress: UnityProgress});
     </script>
+    <style>
+    #webgl-content-overridden {
+        position: relative;
+        top: 0;
+        left: 0;
+        -webkit-transform: none;
+        transform: none;
+    }
+    </style>
   </head>
   <body>
-    <div class="webgl-content">
+    <div>Open the window in a full screen mode, type a number of disks in a textbox at the top of a screen and push a button beside of a textbox.</div>
+    <div><a href="Тестовое задание для Unity-разработчиков.html">Task description</a></div>
+    <div class="webgl-content" id="webgl-content-overridden">
       <div id="gameContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
